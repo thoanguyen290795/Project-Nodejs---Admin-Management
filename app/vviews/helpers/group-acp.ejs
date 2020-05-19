@@ -1,0 +1,10 @@
+<% 
+    groupACPHelper = (collection, group_acp,id) => {
+        let link       = systemConfig.prefixAdmin + '/' + collection + '/change-group-acp/' + id + '/' + group_acp ;
+        let xhtmlGroupACP = (group_acp == 'yes')? 'fa fa-check-square-o fa-lg': 'fa fa-square-o fa-lg'
+        return `<a href="${link}" class="${xhtmlGroupACP}"></a>`;
+    }
+%>
+
+
+

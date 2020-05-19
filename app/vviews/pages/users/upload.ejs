@@ -1,0 +1,18 @@
+<% 
+	const collection = "users";
+	const linkPrefix = systemConfig.prefixAdmin + `/${collection}/`;
+%>
+
+
+<div class="row">
+  <div>
+    <% include ./../../elements/errors %>
+  </div>
+  <form role="form" action="<%=linkPrefix%>upload/" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+          <label>File</label>
+          <input type="file" class="form-control" name="avatar">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>

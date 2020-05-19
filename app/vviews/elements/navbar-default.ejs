@@ -1,0 +1,45 @@
+<div class="navbar-default navbar-static-side" role="navigation">
+	<div class="sidebar-collapse">
+		
+		<ul class="nav" id="side-menu">
+
+			<li>
+				<a href="<%= systemConfig.prefixAdmin %>/dashboard">
+					<i class="fa fa-dashboard fa-fw"></i> Dashboard
+				</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+					Manage Items
+				</a>
+
+			<ul class="nav nav-second-level collapse on" aria-labelledby="navbarDropdown">
+				<li>
+					<a class="dropdown-item" href="<%= systemConfig.prefixAdmin %>/items">
+						Items
+					</a>
+				</li>
+				<li>
+					<a class="dropdown-item" href="<%= systemConfig.prefixAdmin%>/categories">
+						Category
+					</a>
+				</li>
+			</ul>
+		</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				 Manage User
+				</a>
+				<ul class="nav nav-second-level collapse on" aria-labelledby="navbarDropdown">
+				  <li><a class="dropdown-item" href="<%= systemConfig.prefixAdmin %>/groups"><i class="fa fa-angle-double-right"></i>Groups</a></li>
+				  <li><a class="dropdown-item" href="<%= systemConfig.prefixAdmin %>/users"><i class="fa fa-angle-double-right"></i>Users</a></li>
+				  
+				</ul>
+			  </li>
+
+
+		</ul>
+		<!-- /#side-menu -->
+	</div>
+	<!-- /.sidebar-collapse -->
+</div>

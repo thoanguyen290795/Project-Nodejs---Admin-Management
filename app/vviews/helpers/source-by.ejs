@@ -1,0 +1,13 @@
+<% 
+    sourceByHelper = (user_name, time) => { 
+        let xhtmlResult = `<span class="glyphicon glyphicon-user">${user_name}</span><br/>
+        <span class="glyphicon glyphicon-time">${moment(time).format(systemConfig.format_time)}</span>`;
+        return xhtmlResult;
+    } 
+%>
+
+
+
+
+
+
